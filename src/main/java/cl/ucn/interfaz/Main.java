@@ -91,11 +91,11 @@ public class Main {
         System.out.print("Total de órdenes: ");
         int orders = Integer.parseInt(scanner.nextLine());
         System.out.print("Nivel (BASIC, SILVER, GOLD, PLATINUM): ");
-        Customer.LoyaltyLevel level = Customer.LoyaltyLevel.valueOf(scanner.nextLine().toUpperCase());
+        Customer.LoyaltyLevel level = Customer.LoyaltyLevel.valueOf(scanner.nextLine().toUpperCase()); // debe ingresar si o si el string adecuado
         System.out.print("¿Tiene promoción activa? (true/false): ");
-        boolean promo = Boolean.parseBoolean(scanner.nextLine());
+        boolean promo = Boolean.parseBoolean(scanner.nextLine()); // aqui puede ingresar un numero negativo o palabra
 
-        Customer c = new Customer(id, joinDate, orders, level, promo);
+        Customer c = new Customer(id, joinDate, orders, level, promo); // verifica que el cliente se esta construyendo correctamente
 
         em.getTransaction().begin();
         em.persist(c);
@@ -155,9 +155,9 @@ public class Main {
         }
 
         System.out.print("Nuevo total de órdenes: ");
-        int orders = Integer.parseInt(scanner.nextLine());
+        int orders = Integer.parseInt(scanner.nextLine()); // aqui puede ingresar un numero negativo o palabra
         System.out.print("Nuevo nivel (BASIC, SILVER, GOLD, PLATINUM): ");
-        Customer.LoyaltyLevel level = Customer.LoyaltyLevel.valueOf(scanner.nextLine().toUpperCase());
+        Customer.LoyaltyLevel level = Customer.LoyaltyLevel.valueOf(scanner.nextLine().toUpperCase()); // debe ingresar si o si el string adecuado
         System.out.print("¿Tiene promoción activa? (true/false): ");
         boolean promo = Boolean.parseBoolean(scanner.nextLine());
 
