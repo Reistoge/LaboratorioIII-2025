@@ -2,6 +2,10 @@
 
 Fecha de Entrega: **01/07/2025**
 
+Integrantes:
+* Ferran Rojas Andreu. 
+* Maximo Sarno Jimenez.
+
 ## Objetivo
 
 El objetivo de este laboratorio es que el/la estudiante sea capaz de diseñar y ejecutar **pruebas unitarias** utilizando **JUnit 4**, aplicando buenas prácticas en cobertura, validación de excepciones y organización del código de testeo.
